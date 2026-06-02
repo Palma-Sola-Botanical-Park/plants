@@ -7,11 +7,11 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
   :root {
-    --forest:#1a2e1a; --moss:#2d4a2d; --sage:#4a6a3a; --fern:#6a8a5a;
-    --cream:#f5f0e8; --parchment:#e8dfc8; --gold:#b8942a; --gold-light:#d4aa40;
-    --danger:#8b2020; --danger-light:#fff0f0;
-    --safe-dark:#1a5c1a; --safe-light:#edf7ed;
-    --text-dark:#1a1a14; --text-mid:#2e2e1e;
+    --forest:#1a2e1a;--moss:#2d4a2d;--sage:#4a6a3a;--fern:#6a8a5a;
+    --cream:#f5f0e8;--parchment:#e8dfc8;--gold:#b8942a;--gold-light:#d4aa40;
+    --danger:#8b2020;--danger-light:#fff0f0;
+    --safe-dark:#1a5c1a;--safe-light:#edf7ed;
+    --text-dark:#1a1a14;--text-mid:#2e2e1e;
     --card-shadow:0 2px 8px rgba(26,46,26,0.10);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
@@ -33,6 +33,7 @@
   .badge{font-size:12px;font-weight:700;padding:5px 13px;border-radius:20px;letter-spacing:0.3px;}
   .badge-neutral{background:var(--parchment);color:var(--text-mid);border:1.5px solid rgba(90,122,74,0.3);}
   .badge-green{background:#d8eed8;color:#1a4a1a;border:1.5px solid rgba(45,74,45,0.35);}
+  .badge-native{background:#d0e8ff;color:#0a2a5a;border:1.5px solid rgba(10,42,90,0.3);}
   .badge-safe{background:var(--safe-light);color:var(--safe-dark);border:1.5px solid rgba(26,92,26,0.3);}
   .badge-warn{background:#fff3d8;color:#6a3a00;border:1.5px solid rgba(180,120,0,0.3);}
   .badge-danger{background:var(--danger-light);color:var(--danger);border:1.5px solid rgba(139,32,32,0.3);}
@@ -59,6 +60,9 @@
   .safe-section{margin:12px 12px 0;background:var(--safe-light);border-radius:10px;overflow:hidden;box-shadow:var(--card-shadow);border:1.5px solid rgba(26,92,26,0.2);}
   .safe-section .section-header{background:var(--safe-dark);}
   .safe-section .section-body p{font-size:17px;line-height:1.7;color:#0a2a0a;}
+  .caution-section{margin:12px 12px 0;background:#fffbf0;border-radius:10px;overflow:hidden;box-shadow:var(--card-shadow);border:1.5px solid rgba(180,120,0,0.25);}
+  .caution-section .section-header{background:#7a5000;}
+  .caution-section .section-body p{font-size:17px;line-height:1.7;color:#3a2000;}
   .data-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px;}
   .data-item{background:var(--parchment);border-radius:8px;padding:11px 13px;border:1px solid rgba(90,122,74,0.15);}
   .data-label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sage);margin-bottom:4px;}
@@ -78,9 +82,11 @@
   .inat-label{font-size:15px;color:rgba(245,240,232,0.8);}
   .inat-label strong{display:block;font-size:17px;color:#fff;font-weight:700;margin-bottom:2px;}
   .inat-arrow{font-size:26px;color:var(--gold-light);}
+  .all-plants-link{margin:10px 12px 0;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--parchment);border-radius:10px;padding:14px 18px;text-decoration:none;border:1.5px solid rgba(90,122,74,0.25);color:var(--moss);font-weight:700;font-size:15px;}
+  .all-plants-link:active{background:var(--cream);}
   .footer{background:var(--forest);margin-top:20px;padding:18px 20px;text-align:center;}
   .footer p{font-size:12px;color:rgba(245,240,232,0.4);line-height:1.7;}
-  .section,.more-info-section,.toxic-section,.safe-section,.inat-link{animation:fadeUp 0.3s ease both;}
+  .section,.more-info-section,.toxic-section,.safe-section,.caution-section,.inat-link,.all-plants-link{animation:fadeUp 0.3s ease both;}
   @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
@@ -101,37 +107,30 @@
 </div>
 <div class="content">
   <div class="status-row"><span class="badge badge-neutral">🌍 Non-native</span><span class="badge badge-warn">⚠️ Invasive Potential</span><span class="badge badge-safe">✅ Not Toxic</span></div>
-
   <div class="section">
     <div class="section-header"><span class="section-icon">⚡</span><span class="section-title">Quick Hits</span></div>
     <ul class="quick-hits-list"><li>Those showy red bristles are <strong>not petals</strong> — they are stamens, the pollen-bearing male organs of the flower.</li><li>Crush a leaf between your fingers for an immediate burst of <strong>fresh citrus fragrance</strong> — a reliable field ID trick.</li><li>One of the most productive <strong>wildlife plants</strong> in the park: hummingbirds, butterflies, and honeybees swarm the blooms.</li><li>Though sold as a tree, it is biologically a <strong>large shrub</strong> trained into tree form.</li></ul>
   </div>
-
   <div class="section">
     <div class="section-header"><span class="section-icon">🌍</span><span class="section-title">Origin</span></div>
     <div class="section-body"><p>Native to eastern Australia, primarily along watercourses in Queensland and New South Wales, with a disjunct population in the Kimberley region of Western Australia. It grows naturally in moist habitats such as riverbanks, creek edges, and flood-prone areas.</p></div>
   </div>
-
   <div class="more-info-section">
     <div class="section-header"><span class="section-icon">🔍</span><span class="section-title">More Information</span></div>
     <ul class="more-info-list"><li>The colorful display is a pollen delivery system — engineered to dust visiting hummingbirds and bees as they feed, ensuring cross-pollination across the park.</li><li>Formerly classified as <em>Callistemon viminalis</em> — you may still find it sold under that name at nurseries. The reclassification to <em>Melaleuca</em> reflects modern genetic analysis.</li><li>UF/IFAS has predicted this species to be invasive and no longer recommends it statewide. In Central Florida (including Manatee County) it is not currently a documented problem, but should be managed to prevent escape into natural areas.</li><li>The genus <em>Melaleuca</em> includes some of Florida's most damaging invasive species — most notably <em>M. quinquenervia</em>, which has transformed thousands of acres of Everglades habitat. <em>M. viminalis</em> is a different species, but the family resemblance is worth knowing.</li></ul>
   </div>
-
   <div class="section">
     <div class="section-header"><span class="section-icon">🦋</span><span class="section-title">Wildlife Value</span></div>
     <div class="section-body"><p>The nectar-rich red spikes are magnets for Florida wildlife — especially hummingbirds, butterflies including zebra longwings, and honeybees. A high-value nectar source during warm months when many other plants have finished blooming. Small woody seed capsules provide food for birds and small mammals. The dense weeping canopy offers shelter year-round.</p><div class="wildlife-tags"><span class="wildlife-tag">🐦 Hummingbirds</span><span class="wildlife-tag">🦋 Butterflies</span><span class="wildlife-tag">🐝 Honeybees</span><span class="wildlife-tag">🐦 Seed-eating Birds</span><span class="wildlife-tag">🐾 Small Mammals</span></div></div>
   </div>
-
   <div class="section">
     <div class="section-header"><span class="section-icon">🏷️</span><span class="section-title">Also Known As</span></div>
     <div class="alias-list"><span class="alias-tag">Creek Bottlebrush</span><span class="alias-tag">Drooping Bottlebrush</span><span class="alias-tag">Crimson Bottlebrush</span><span class="alias-tag">Red Bottlebrush</span><span class="alias-tag">Callistemon viminalis</span></div>
   </div>
-
   <div class="section">
     <div class="section-header"><span class="section-icon">🔬</span><span class="section-title">Reproduction &amp; Identification</span></div>
-    <div class="repro-list"><div class="repro-item"><div class="repro-label">Seeds</div><p>Held in small woody cup-like capsules clustered around the stems. Capsules can remain on the plant for years, releasing seeds gradually.</p></div><div class="repro-item"><div class="repro-label">Flowers</div><p>Bright red bottlebrush spikes 3–4 inches long, appearing mainly spring and summer but sometimes year-round. Highly attractive to hummingbirds, butterflies, and bees.</p></div><div class="repro-item"><div class="repro-label">Fruit</div><p>Small gray or brown woody capsules that look like beads on a necklace, persisting long after flowering ends.</p></div><div class="repro-item"><div class="repro-label">Leaves</div><p>Narrow, pale green, lance-shaped. Strongly citrus-scented when crushed — the most reliable field identification feature.</p></div><div class="repro-item"><div class="repro-label">What to Look For</div><p>The cascading weeping form is distinctive year-round. In bloom, the vivid red spikes are unmistakable. Crush a leaf to confirm with the citrus scent. Look for hummingbirds hovering at the branch tips.</p></div></div>
+    <div class="repro-list"><div class="repro-item"><div class="repro-label">Seeds</div><p>Held in small woody cup-like capsules clustered around the stems; can remain on the plant for years.</p></div><div class="repro-item"><div class="repro-label">Flowers</div><p>Bright red bottlebrush spikes 3–4 inches long, appearing mainly spring and summer but sometimes year-round.</p></div><div class="repro-item"><div class="repro-label">Fruit</div><p>Small gray or brown woody capsules that look like beads on a necklace, persisting long after flowering ends.</p></div><div class="repro-item"><div class="repro-label">Leaves</div><p>Narrow, pale green, lance-shaped. Strongly citrus-scented when crushed — the most reliable field identification feature.</p></div><div class="repro-item"><div class="repro-label">What to Look For</div><p>The cascading weeping form is distinctive year-round. In bloom, the vivid red spikes are unmistakable. Crush a leaf to confirm with the citrus scent. Look for hummingbirds hovering at the branch tips.</p></div></div>
   </div>
-
   <div class="section">
     <div class="section-header"><span class="section-icon">📐</span><span class="section-title">Size &amp; Growing Conditions</span></div>
     <div class="data-grid">
@@ -142,19 +141,15 @@
     <div class="data-item full-width"><div class="data-label">Soil Tolerances</div><div class="data-value">Clay · Sand · Loam · Slightly alkaline · Acidic · Well drained</div></div>
   </div>
   </div>
-
   <div class="safe-section">
     <div class="section-header"><span class="section-icon">🍵</span><span class="section-title">Edibility &amp; Toxicity</span></div>
-    <div class="section-body"><p>The flowers are non-toxic and can be steeped in hot or cold water to make a sweet, edible tea or syrup. Not considered a food plant in Florida landscapes, but no toxicity to people or pets.</p></div>
+    <div class="section-body"><p>The flowers are non-toxic and can be steeped to make a sweet edible tea or syrup. Not considered a food plant in Florida landscapes, but no toxicity to people or pets.</p></div>
   </div>
-
   <a class="inat-link" href="https://www.inaturalist.org/observations?project_id=palma-sola-botanical-park&subview=table&taxon_id=77977&verifiable=any" target="_blank">
-    <div class="inat-label">
-      <strong>View on iNaturalist</strong>
-      Observations at Palma Sola Botanical Park
-    </div>
+    <div class="inat-label"><strong>View on iNaturalist</strong>Observations at Palma Sola Botanical Park</div>
     <span class="inat-arrow">→</span>
   </a>
+  <a class="all-plants-link" href="index.html">🌿 See All Plants</a>
 </div>
 <footer class="footer">
   <p>Palma Sola Botanical Park Foundation, Inc.<br>Bradenton, Florida · palmasolabp.org</p>
