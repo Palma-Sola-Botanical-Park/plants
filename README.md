@@ -1,2 +1,1 @@
-# plants
-Plants of Palma Sola Botanical Park
+html<meta http-equiv="refresh" content="0; url=index.html">
