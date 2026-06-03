@@ -17,35 +17,32 @@
   .header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sage),var(--gold-light),var(--sage));}
   .logo-bar{display:flex;align-items:center;justify-content:center;padding:14px 20px 16px;}
   .logo-bar img{height:52px;width:auto;object-fit:contain;}
-  .hero-band{background:var(--moss);padding:22px 18px 20px;border-bottom:2px solid var(--gold);}
-  .hero-band h1{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#fff;line-height:1.15;margin-bottom:6px;}
-  .hero-band p{font-size:15px;color:rgba(245,240,232,0.75);line-height:1.5;}
-  .count-band{background:var(--cream);padding:10px 16px;border-bottom:1px solid rgba(90,122,74,0.15);display:flex;align-items:center;gap:8px;}
-  .count-label{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--sage);}
-  .count-num{font-size:12px;font-weight:700;background:var(--gold-light);color:var(--forest);padding:2px 8px;border-radius:10px;}
-  .plant-list{padding:12px 12px 40px;display:flex;flex-direction:column;gap:10px;}
-  .plant-card{display:flex;align-items:center;gap:14px;background:#fff;border-radius:10px;padding:14px;text-decoration:none;box-shadow:0 2px 8px rgba(26,46,26,0.08);border:1px solid rgba(90,122,74,0.1);transition:transform 0.15s,box-shadow 0.15s;}
-  .plant-card:active{transform:scale(0.98);box-shadow:0 1px 4px rgba(26,46,26,0.1);}
-  .card-icon{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;}
+  .hero-band{background:var(--moss);padding:20px 18px 18px;border-bottom:2px solid var(--gold);}
+  .hero-band h1{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#fff;margin-bottom:5px;}
+  .hero-band p{font-size:14px;color:rgba(245,240,232,0.75);line-height:1.5;}
+  .total-band{background:var(--cream);padding:9px 16px;border-bottom:1px solid rgba(90,122,74,0.15);display:flex;align-items:center;gap:8px;}
+  .total-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--sage);}
+  .total-num{font-size:11px;font-weight:700;background:var(--gold-light);color:var(--forest);padding:2px 8px;border-radius:10px;}
+  .plant-list{padding:12px 12px 40px;}
+  .category-section{margin-bottom:8px;}
+  .category-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;margin-bottom:6px;border-left:4px solid;background:#fff;border-radius:0 8px 8px 0;box-shadow:0 1px 4px rgba(26,46,26,0.07);}
+  .category-name{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-mid);}
+  .category-count{font-size:11px;font-weight:700;background:var(--parchment);color:var(--text-light);padding:2px 8px;border-radius:10px;border:1px solid rgba(90,122,74,0.2);}
+  .plant-card{display:flex;align-items:center;gap:12px;background:#fff;border-radius:10px;padding:12px 14px;text-decoration:none;box-shadow:0 1px 5px rgba(26,46,26,0.07);border:1px solid rgba(90,122,74,0.08);margin-bottom:7px;transition:transform 0.15s;}
+  .plant-card:active{transform:scale(0.98);}
+  .card-icon{width:42px;height:42px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
   .card-body{flex:1;min-width:0;}
-  .card-category{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--sage);margin-bottom:3px;}
-  .card-common{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--text-dark);line-height:1.2;margin-bottom:2px;}
-  .card-botanical{font-size:13px;font-style:italic;color:var(--text-light);}
-  .card-arrow{font-size:24px;color:var(--gold-light);font-weight:700;flex-shrink:0;}
-  .inat-project-link{margin:0 12px;display:flex;align-items:center;justify-content:space-between;background:var(--moss);border-radius:10px;padding:14px 16px;text-decoration:none;box-shadow:0 2px 8px rgba(26,46,26,0.1);}
-  .inat-project-link:active{background:var(--forest);}
-  .inat-label{font-size:14px;color:rgba(245,240,232,0.8);}
-  .inat-label strong{display:block;font-size:16px;color:#fff;font-weight:700;margin-bottom:2px;}
-  .inat-arrow{font-size:22px;color:var(--gold-light);}
-  .footer{background:var(--forest);margin-top:20px;padding:18px 20px;text-align:center;}
-  .footer p{font-size:12px;color:rgba(245,240,232,0.4);line-height:1.7;}
+  .card-common{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--text-dark);line-height:1.2;margin-bottom:2px;}
+  .card-botanical{font-size:12px;font-style:italic;color:var(--text-light);}
+  .card-arrow{font-size:22px;color:var(--gold-light);font-weight:700;flex-shrink:0;}
+  .inat-link{margin:4px 0 0;display:flex;align-items:center;justify-content:space-between;background:var(--moss);border-radius:10px;padding:13px 16px;text-decoration:none;box-shadow:0 1px 5px rgba(26,46,26,0.1);}
+  .inat-label{font-size:13px;color:rgba(245,240,232,0.8);}
+  .inat-label strong{display:block;font-size:15px;color:#fff;font-weight:700;margin-bottom:1px;}
+  .inat-arrow{font-size:20px;color:var(--gold-light);}
+  .footer{background:var(--forest);margin-top:16px;padding:16px 20px;text-align:center;}
+  .footer p{font-size:11px;color:rgba(245,240,232,0.4);line-height:1.7;}
   .plant-card{animation:fadeUp 0.3s ease both;}
-  .plant-card:nth-child(2){animation-delay:0.04s;}
-  .plant-card:nth-child(3){animation-delay:0.08s;}
-  .plant-card:nth-child(4){animation-delay:0.12s;}
-  .plant-card:nth-child(5){animation-delay:0.16s;}
-  .plant-card:nth-child(6){animation-delay:0.20s;}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 </style>
 </head>
 <body>
@@ -54,73 +51,150 @@
 </header>
 <div class="hero-band">
   <h1>Plant Collection</h1>
-  <p>Explore the documented plants of Palma Sola Botanical Park — scan any QR code in the park to jump directly to a plant page.</p>
+  <p>Scan any QR code in the park to jump to a plant page, or browse the full collection below.</p>
 </div>
-<div class="count-band">
-  <span class="count-label">Documented Plants</span>
-  <span class="count-num">6</span>
+<div class="total-band">
+  <span class="total-label">Documented Plants</span>
+  <span class="total-num">12</span>
 </div>
 <div class="plant-list">
 
+  <div class="category-section">
+    <div class="category-header" style="border-left-color:#1a4a2d">
+      <span class="category-name">Native Palms &amp; Cycads</span>
+      <span class="category-count">1</span>
+    </div>
+    
+    <a class="plant-card" href="PSBP-00003-Buccaneer-Palm.html">
+      <div class="card-icon" style="background:#1a4a2d">🌴</div>
+      <div class="card-body">
+        <div class="card-common">Buccaneer Palm</div>
+        <div class="card-botanical">Pseudophoenix sargentii</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+  </div>
+  <div class="category-section">
+    <div class="category-header" style="border-left-color:#4a6a10">
+      <span class="category-name">Native Groundcovers &amp; Wildflowers</span>
+      <span class="category-count">2</span>
+    </div>
+    
+    <a class="plant-card" href="PSBP-00008-Beach-Sunflower.html">
+      <div class="card-icon" style="background:#4a6a10">🌻</div>
+      <div class="card-body">
+        <div class="card-common">Beach Sunflower</div>
+        <div class="card-botanical">Helianthus debilis</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+    <a class="plant-card" href="PSBP-00009-Firewheel.html">
+      <div class="card-icon" style="background:#4a6a10">🔥</div>
+      <div class="card-body">
+        <div class="card-common">Firewheel</div>
+        <div class="card-botanical">Gaillardia pulchella</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+  </div>
+  <div class="category-section">
+    <div class="category-header" style="border-left-color:#2d4a2d">
+      <span class="category-name">Flowering Shrubs &amp; Vines</span>
+      <span class="category-count">4</span>
+    </div>
+    
     <a class="plant-card" href="PSBP-00001-Tree-Crinum.html">
       <div class="card-icon" style="background:#2d4a2d">🌸</div>
       <div class="card-body">
-        <div class="card-category">Flowering Shrubs &amp; Vines</div>
         <div class="card-common">Tree Crinum</div>
         <div class="card-botanical">Crinum asiaticum</div>
       </div>
       <div class="card-arrow">›</div>
     </a>
     <a class="plant-card" href="PSBP-00002-Weeping-Bottlebrush.html">
-      <div class="card-icon" style="background:#2d4a2d">🌸</div>
+      <div class="card-icon" style="background:#2d4a2d">🌿</div>
       <div class="card-body">
-        <div class="card-category">Flowering Shrubs &amp; Vines</div>
         <div class="card-common">Weeping Bottlebrush</div>
         <div class="card-botanical">Melaleuca viminalis</div>
       </div>
       <div class="card-arrow">›</div>
     </a>
-    <a class="plant-card" href="PSBP-00003-Buccaneer-Palm.html">
-      <div class="card-icon" style="background:#1a4a2d">🌴</div>
-      <div class="card-body">
-        <div class="card-category">Native Palms &amp; Cycads</div>
-        <div class="card-common">Buccaneer Palm</div>
-        <div class="card-botanical">Pseudophoenix sargentii</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </a>
-    <a class="plant-card" href="PSBP-00004-Silk-Floss-Tree.html">
-      <div class="card-icon" style="background:#3a2a1a">🌳</div>
-      <div class="card-body">
-        <div class="card-category">Tropical Specimen Trees</div>
-        <div class="card-common">Silk Floss Tree</div>
-        <div class="card-botanical">Ceiba speciosa</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </a>
-    <a class="plant-card" href="PSBP-00005-Queens-Crepe-Myrtle.html">
-      <div class="card-icon" style="background:#2a1a3a">🏛️</div>
-      <div class="card-body">
-        <div class="card-category">Culturally &amp; Historically Significant</div>
-        <div class="card-common">Queen's Crepe Myrtle</div>
-        <div class="card-botanical">Lagerstroemia speciosa</div>
-      </div>
-      <div class="card-arrow">›</div>
-    </a>
     <a class="plant-card" href="PSBP-00006-Peregrina.html">
-      <div class="card-icon" style="background:#2d4a2d">🌸</div>
+      <div class="card-icon" style="background:#2d4a2d">🌺</div>
       <div class="card-body">
-        <div class="card-category">Flowering Shrubs &amp; Vines</div>
         <div class="card-common">Peregrina</div>
         <div class="card-botanical">Jatropha integerrima</div>
       </div>
       <div class="card-arrow">›</div>
     </a>
+    <a class="plant-card" href="PSBP-00012-Peacock-Flower.html">
+      <div class="card-icon" style="background:#2d4a2d">🦚</div>
+      <div class="card-body">
+        <div class="card-common">Peacock Flower</div>
+        <div class="card-botanical">Caesalpinia pulcherrima</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+  </div>
+  <div class="category-section">
+    <div class="category-header" style="border-left-color:#3a2a1a">
+      <span class="category-name">Tropical Specimen Trees</span>
+      <span class="category-count">4</span>
+    </div>
+    
+    <a class="plant-card" href="PSBP-00004-Silk-Floss-Tree.html">
+      <div class="card-icon" style="background:#3a2a1a">🌳</div>
+      <div class="card-body">
+        <div class="card-common">Silk Floss Tree</div>
+        <div class="card-botanical">Ceiba speciosa</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+    <a class="plant-card" href="PSBP-00007-Jacaranda.html">
+      <div class="card-icon" style="background:#3a2a1a">💜</div>
+      <div class="card-body">
+        <div class="card-common">Jacaranda</div>
+        <div class="card-botanical">Jacaranda mimosifolia</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+    <a class="plant-card" href="PSBP-00010-Geiger-Tree.html">
+      <div class="card-icon" style="background:#3a2a1a">🟠</div>
+      <div class="card-body">
+        <div class="card-common">Geiger Tree</div>
+        <div class="card-botanical">Cordia sebestena</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+    <a class="plant-card" href="PSBP-00011-Baobab.html">
+      <div class="card-icon" style="background:#3a2a1a">🌍</div>
+      <div class="card-body">
+        <div class="card-common">Baobab</div>
+        <div class="card-botanical">Adansonia digitata</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+  </div>
+  <div class="category-section">
+    <div class="category-header" style="border-left-color:#2a1a3a">
+      <span class="category-name">Culturally &amp; Historically Significant</span>
+      <span class="category-count">1</span>
+    </div>
+    
+    <a class="plant-card" href="PSBP-00005-Queens-Crepe-Myrtle.html">
+      <div class="card-icon" style="background:#2a1a3a">🏛️</div>
+      <div class="card-body">
+        <div class="card-common">Queen's Crepe Myrtle</div>
+        <div class="card-botanical">Lagerstroemia speciosa</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+  </div>
+  <a class="inat-link" href="https://www.inaturalist.org/projects/palma-sola-botanical-park" target="_blank">
+    <div class="inat-label"><strong>All Park Observations</strong>View the full iNaturalist project</div>
+    <span class="inat-arrow">→</span>
+  </a>
 </div>
-<a class="inat-project-link" href="https://www.inaturalist.org/projects/palma-sola-botanical-park" target="_blank" style="margin-bottom:12px;">
-  <div class="inat-label"><strong>All Park Observations</strong>View the full iNaturalist project</div>
-  <span class="inat-arrow">→</span>
-</a>
 <footer class="footer">
   <p>Palma Sola Botanical Park Foundation, Inc.<br>Bradenton, Florida · palmasolabp.org</p>
 </footer>
